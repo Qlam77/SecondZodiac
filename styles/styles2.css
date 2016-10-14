@@ -81,8 +81,7 @@ a{
 	margin-right: auto;
 	height: 100%;
 	width: 100%;
-	border: 1px solid black;
-
+	margin-bottom: 2%;
 }
 .animal{
 	display: inline-block;
@@ -128,19 +127,14 @@ th {
 }
 
 #button1 {
-	    background-color: gray;
+	    background-color: white;
 		opacity: 0.6;
 	    border: none;
-	    color: white;
+	    color: black;
 	    padding: 8px 32px;
 	    text-align: center;
 	    text-decoration: none;
 	    font-size: 16px;
-		margin-left: 119px;
-}
-
-#tablediv{
-	margin-left: 193px;
 }
 .emails{
 	font-weight: bold;
@@ -206,4 +200,12 @@ th {
 }
 .yourname{
 	text-align: right;
+}
+.home{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 5%;
 }
