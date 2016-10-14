@@ -9,7 +9,7 @@ hr {
 	width:100%;
 }
 body {color:black;
-	background-color: RGB(255,255,255);
+	background-color: gray;
 	background-size: 100% 100%;
 	bottom:0;
 	background-repeat: no-repeat;
@@ -28,17 +28,11 @@ body {color:black;
 	display: inline-block;
 }
 
-#footer {
-	text-align: center;
-	margin-left: 0;
-	margin-right: 0;
-}
-
 html{
 	font-family: "Arial";
-	background-color: rgb(255, 255, 255);
-	width:1024px;
-	height: 768px;
+	background-color: gray;
+	width: 70%;
+	height: 70%;
 	margin: 0 auto;
 	}
 .subhead1 {
@@ -82,9 +76,12 @@ a{
 
 }
 .logo {
-	float:left;
-	height: 10%;
-	width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
 
 }
 .animal{
@@ -96,8 +93,17 @@ a{
 .animal2{
 	padding-left: 10;
 	display: inline-block;
-	height: 10%;
-	width: 15%;
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.animal3{
+	padding-left: 10;
+	display: inline-block;
+	height: 50%;
+	width: 50%;
 	border: 1px solid black;
 }
 #centerpic{
@@ -158,6 +164,12 @@ th {
 	width: 100%;
 
 }
+.mainlist2{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
 #testul{
 	list-style-type: none;
 }
@@ -165,4 +177,33 @@ th {
 	width: 100%;
 	text-align: center;
 	margin: 5px;
+}
+.headers{
+	padding-left: 10;
+	display: inline-block;
+	width: 15%;
+	border: 1px solid black;
+}
+.col-xs-4{
+	text-align: center;
+}
+.heading{
+	color: white;
+}
+.col-md-6{
+	text-align: center;
+	
+}
+.visible-md{
+	text-align: right;
+}
+.myname{
+	text-align: left;
+}
+.row{
+	text-align: center;
+	
+}
+.yourname{
+	text-align: right;
 }
