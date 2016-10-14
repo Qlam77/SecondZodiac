@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bootstrap 3.0 Grid System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            div[class^="col-"] {
+                height:  100px;
+                text-align:  center;
+                border:  2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Grid classes: 
+            .container: wrapper for all your rows. Also centers row and prevents it from being full screen.
+            .row: contains all your column classes
+            .col-##-##: the sizes of the columns in your row (xs, sm, md, lg)
+        -->
+        <div class="container">
+            <div class="row bg-warning">
+                <div class="col-xs-12">col-xs-12</div>
+            </div>
+            <div class="row bg-info">
+                <div class="col-xs-6">col-xs-6</div>
+                <div class="col-xs-6">col-xs-6</div>
+            </div>
+            <div class="row bg-danger">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-4">col-xs-4</div>
+                        <div class="col-xs-8">col-xs-8</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

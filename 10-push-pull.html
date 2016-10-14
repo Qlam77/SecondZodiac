@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bootstrap 3.0 Grid System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            div[class^="col-"] {
+                height:  100px;
+                text-align:  center;
+                border:  2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Mobile First
+
+        Grid classes: 
+            .container: wrapper for all your rows. Also centers row and prevents it from being full screen.
+            .row: contains all your column classes
+            .col-##-##: the sizes of the columns in your row (xs, sm, md, lg)
+
+        Ordering classes (only for md and lg screens):
+            .col-##-push-##: Pushes your columns
+            .com-##-pull-##: Pulls your columns
+        -->
+        <div class="container">
+            <div class="row bg-warning">
+                <div class="col-xs-12">col-xs-12</div>
+            </div>
+
+            <!-- 
+                - Alter width and notice that as you make screen width larger there is a point
+                where 6-6 becomes 4-8
+                - This solution overrides stacking behavior
+            -->
+            <div class="row bg-info">
+                <div class="col-xs-6 col-lg-4">col-xs-6</div>
+                <div class="col-xs-6 col-lg-8">col-xs-6</div>
+            </div>
+
+            <!-- Alter width and notice how this behaves -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row bg-danger">
+                        <div class="col-xs-4">col-xs-4</div>
+                        <div class="col-xs-8">col-xs-8</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- 
+                        - push & pull causes the two columns to swap places at width of md
+                        - the lowest you can go is md, does not work for xs and sm 
+                    -->
+                    <div class="row">
+                        <div class="col-xs-4 col-md-push-8  bg-success">col-xs-4 AAAA</div>
+                        <div class="col-xs-8 col-md-pull-4 bg-warning">col-xs-8 BBBB</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Notice behavior of sm when you reduce width. These xs cols become stacked rows -->
+            <!-- Smaller screens will not inherit the layout of the larger screens -->
+            <div class="row footer bg-primary">
+                <div class="col-xs-4">col-xs-4</div>
+                <div class="col-xs-4">col-xs-4</div>
+                <div class="col-xs-4">col-xs-4</div>
+            </div>
+        </div>
+    </body>
+</html>
